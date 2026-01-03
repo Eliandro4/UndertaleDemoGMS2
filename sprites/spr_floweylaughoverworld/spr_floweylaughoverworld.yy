@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_floweylaughoverworld",
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 60,
   "height": 60,
   "textureGroupId": {
@@ -24,18 +28,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1e3d2225-ef17-4b07-a908-5420de779fc5","path":"sprites/spr_floweylaughoverworld/spr_floweylaughoverworld.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1e3d2225-ef17-4b07-a908-5420de779fc5","path":"sprites/spr_floweylaughoverworld/spr_floweylaughoverworld.yy",},"LayerId":{"name":"cf96a87f-0576-4adb-b496-ad46d32c081b","path":"sprites/spr_floweylaughoverworld/spr_floweylaughoverworld.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_floweylaughoverworld","path":"sprites/spr_floweylaughoverworld/spr_floweylaughoverworld.yy",},"resourceVersion":"1.0","name":"1e3d2225-ef17-4b07-a908-5420de779fc5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"03618ce3-1a2f-454c-8b68-bdfee82349bc","path":"sprites/spr_floweylaughoverworld/spr_floweylaughoverworld.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"03618ce3-1a2f-454c-8b68-bdfee82349bc","path":"sprites/spr_floweylaughoverworld/spr_floweylaughoverworld.yy",},"LayerId":{"name":"cf96a87f-0576-4adb-b496-ad46d32c081b","path":"sprites/spr_floweylaughoverworld/spr_floweylaughoverworld.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_floweylaughoverworld","path":"sprites/spr_floweylaughoverworld/spr_floweylaughoverworld.yy",},"resourceVersion":"1.0","name":"03618ce3-1a2f-454c-8b68-bdfee82349bc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9d61136c-22e4-493f-a1fd-78099a0ae659","path":"sprites/spr_floweylaughoverworld/spr_floweylaughoverworld.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9d61136c-22e4-493f-a1fd-78099a0ae659","path":"sprites/spr_floweylaughoverworld/spr_floweylaughoverworld.yy",},"LayerId":{"name":"cf96a87f-0576-4adb-b496-ad46d32c081b","path":"sprites/spr_floweylaughoverworld/spr_floweylaughoverworld.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_floweylaughoverworld","path":"sprites/spr_floweylaughoverworld/spr_floweylaughoverworld.yy",},"resourceVersion":"1.0","name":"9d61136c-22e4-493f-a1fd-78099a0ae659","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1e3d2225-ef17-4b07-a908-5420de779fc5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"03618ce3-1a2f-454c-8b68-bdfee82349bc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9d61136c-22e4-493f-a1fd-78099a0ae659",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_floweylaughoverworld","path":"sprites/spr_floweylaughoverworld/spr_floweylaughoverworld.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,11 +46,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"30527408-9831-4e65-b95d-6e01d958949e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1e3d2225-ef17-4b07-a908-5420de779fc5","path":"sprites/spr_floweylaughoverworld/spr_floweylaughoverworld.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"98d728eb-084c-4a25-91e6-76971e0cea79","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"03618ce3-1a2f-454c-8b68-bdfee82349bc","path":"sprites/spr_floweylaughoverworld/spr_floweylaughoverworld.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"07961806-6549-475f-aead-a0c9e5432fb1","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9d61136c-22e4-493f-a1fd-78099a0ae659","path":"sprites/spr_floweylaughoverworld/spr_floweylaughoverworld.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -66,22 +66,13 @@
     "yorigin": 35,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_floweylaughoverworld","path":"sprites/spr_floweylaughoverworld/spr_floweylaughoverworld.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cf96a87f-0576-4adb-b496-ad46d32c081b","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cf96a87f-0576-4adb-b496-ad46d32c081b","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "OverWorld",
     "path": "folders/Sprites/Characters/Flowey/OverWorld.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_floweylaughoverworld",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

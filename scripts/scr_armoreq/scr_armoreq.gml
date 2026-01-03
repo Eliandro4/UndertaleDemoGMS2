@@ -8,7 +8,4 @@ function scr_armoreq(argument0, argument1) {
 	//TODO: Actually checks if i need to put arguments here
 	scr_itemnameb(argument0)
 	scr_itemname(argument1)
-
-
-
 }

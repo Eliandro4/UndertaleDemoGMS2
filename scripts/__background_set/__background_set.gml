@@ -9,6 +9,4 @@ function __background_set(argument0, argument1, argument2) {
 
 	var __res = __background_get_internal(__prop, __bind, __backinfo);
 	return __res;
-
-
 }

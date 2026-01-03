@@ -1,3 +1,9 @@
+oldx=x
+oldy=y
+global.phasing=0
+facing=global.facing
+global.currentroom=room
+
 scr_depth();
 
 if (global.flag[7] == 1)

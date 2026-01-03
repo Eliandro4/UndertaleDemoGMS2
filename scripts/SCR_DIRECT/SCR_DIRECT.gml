@@ -18,7 +18,4 @@ function SCR_DIRECT(argument0, argument1, argument2, argument3, argument4, argum
 	}
 
 	//1, 4, 60, 0.5, 270, 0.1, 8 rain
-
-
-
 }

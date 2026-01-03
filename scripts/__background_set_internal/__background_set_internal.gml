@@ -42,31 +42,27 @@ function __background_set_internal(argument0, argument1, argument2, argument3) {
 	{
 		switch(__prop)
 		{
-		case e__BG.Visible: layer_set_visible(__layerid, __val); layer_background_visible(__backid, __val); break;	
-		case e__BG.Index: 		
-			layer_background_change(__backid, __val);  
-			// RK :: if we are setting a sprite then set the background colour to white so it is blending correctly
-			if (sprite_exists(__val)) { 
-				layer_background_blend(__backid, c_white ); 
-				layer_background_alpha(__backid, 1 ); 
-			} // end if
-			break;
-		case e__BG.X: layer_x(__layerid, __val); break;
-		case e__BG.Y: layer_y(__layerid, __val); break;
-		case e__BG.HTiled: layer_background_htiled(__backid, __val); break;
-		case e__BG.VTiled: layer_background_vtiled(__backid, __val); break;
-		case e__BG.XScale: layer_background_xscale(__backid, __val); break;
-		case e__BG.YScale: layer_background_yscale(__backid, __val); break;
-		case e__BG.HSpeed: layer_hspeed(__layerid, __val); break;
-		case e__BG.VSpeed: layer_vspeed(__layerid, __val); break;
-		case e__BG.Blend: layer_background_blend(__backid, __val); break;
-		case e__BG.Alpha: layer_background_alpha(__backid, __val); break;
-		default: break;
+			case e__BG.Visible: layer_set_visible(__layerid, __val); layer_background_visible(__backid, __val); break;	
+			case e__BG.Index: 		
+				layer_background_change(__backid, __val);  
+				// RK :: if we are setting a sprite then set the background colour to white so it is blending correctly
+				if (sprite_exists(__val)) { 
+					layer_background_blend(__backid, c_white ); 
+					layer_background_alpha(__backid, 1 ); 
+				} // end if
+				break;
+			case e__BG.X: layer_x(__layerid, __val); break;
+			case e__BG.Y: layer_y(__layerid, __val); break;
+			case e__BG.HTiled: layer_background_htiled(__backid, __val); break;
+			case e__BG.VTiled: layer_background_vtiled(__backid, __val); break;
+			case e__BG.XScale: layer_background_xscale(__backid, __val); break;
+			case e__BG.YScale: layer_background_yscale(__backid, __val); break;
+			case e__BG.HSpeed: layer_hspeed(__layerid, __val); break;
+			case e__BG.VSpeed: layer_vspeed(__layerid, __val); break;
+			case e__BG.Blend: layer_background_blend(__backid, __val); break;
+			case e__BG.Alpha: layer_background_alpha(__backid, __val); break;
+			default: break;
 		};
 	}
-
 	return -1;
-
-
-
 }

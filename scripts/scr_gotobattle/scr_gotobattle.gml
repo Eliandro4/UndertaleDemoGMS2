@@ -1,5 +1,1 @@
-function scr_gotobattle() {
-
-
-
-}
+function scr_gotobattle() {}

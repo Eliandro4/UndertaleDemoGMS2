@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_face_torielrevengetalk",
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 32,
   "height": 32,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fd0e364f-d909-4f09-bbc8-4dac44590c1b","path":"sprites/spr_face_torielrevengetalk/spr_face_torielrevengetalk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fd0e364f-d909-4f09-bbc8-4dac44590c1b","path":"sprites/spr_face_torielrevengetalk/spr_face_torielrevengetalk.yy",},"LayerId":{"name":"4c21916e-680b-4933-a900-a6c9a73bc8d4","path":"sprites/spr_face_torielrevengetalk/spr_face_torielrevengetalk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_face_torielrevengetalk","path":"sprites/spr_face_torielrevengetalk/spr_face_torielrevengetalk.yy",},"resourceVersion":"1.0","name":"fd0e364f-d909-4f09-bbc8-4dac44590c1b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"dedf9884-f331-4c3c-b554-93cdb8cbfb14","path":"sprites/spr_face_torielrevengetalk/spr_face_torielrevengetalk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dedf9884-f331-4c3c-b554-93cdb8cbfb14","path":"sprites/spr_face_torielrevengetalk/spr_face_torielrevengetalk.yy",},"LayerId":{"name":"4c21916e-680b-4933-a900-a6c9a73bc8d4","path":"sprites/spr_face_torielrevengetalk/spr_face_torielrevengetalk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_face_torielrevengetalk","path":"sprites/spr_face_torielrevengetalk/spr_face_torielrevengetalk.yy",},"resourceVersion":"1.0","name":"dedf9884-f331-4c3c-b554-93cdb8cbfb14","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fd0e364f-d909-4f09-bbc8-4dac44590c1b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dedf9884-f331-4c3c-b554-93cdb8cbfb14",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_face_torielrevengetalk","path":"sprites/spr_face_torielrevengetalk/spr_face_torielrevengetalk.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -43,10 +45,10 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"853f7222-8340-4d9d-8efc-10c25b4bac19","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fd0e364f-d909-4f09-bbc8-4dac44590c1b","path":"sprites/spr_face_torielrevengetalk/spr_face_torielrevengetalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c2e15d67-47f7-4ddb-9d17-b127b7633fd2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dedf9884-f331-4c3c-b554-93cdb8cbfb14","path":"sprites/spr_face_torielrevengetalk/spr_face_torielrevengetalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_face_torielrevengetalk","path":"sprites/spr_face_torielrevengetalk/spr_face_torielrevengetalk.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4c21916e-680b-4933-a900-a6c9a73bc8d4","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4c21916e-680b-4933-a900-a6c9a73bc8d4","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Face",
     "path": "folders/Sprites/Characters/Toriel/Face.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_face_torielrevengetalk",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

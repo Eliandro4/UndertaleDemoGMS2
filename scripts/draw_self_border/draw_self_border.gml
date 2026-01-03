@@ -19,7 +19,4 @@ function draw_self_border() {
 	//draw_text(0,20,ll)
 	//draw_text(0,40,ww)
 	//draw_text(0,60,hh)
-
-
-
 }

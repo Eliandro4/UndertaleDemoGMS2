@@ -9,7 +9,4 @@ function scr_phoneshift(argument0, argument1) {
   
 	//TODO: Actually checks if i need to put arguments here
 	scr_phonename(argument1)
-
-
-
 }

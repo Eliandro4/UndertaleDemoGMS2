@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "bg_ruins7A",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 320,
   "height": 240,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"dbcb8a0b-faf5-4378-be80-f9feb1ee5ce8","path":"sprites/bg_ruins7A/bg_ruins7A.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dbcb8a0b-faf5-4378-be80-f9feb1ee5ce8","path":"sprites/bg_ruins7A/bg_ruins7A.yy",},"LayerId":{"name":"8149bb97-434c-4ef1-9781-8572f255857a","path":"sprites/bg_ruins7A/bg_ruins7A.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"bg_ruins7A","path":"sprites/bg_ruins7A/bg_ruins7A.yy",},"resourceVersion":"1.0","name":"dbcb8a0b-faf5-4378-be80-f9feb1ee5ce8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dbcb8a0b-faf5-4378-be80-f9feb1ee5ce8",},
   ],
   "sequence": {
-    "spriteId": {"name":"bg_ruins7A","path":"sprites/bg_ruins7A/bg_ruins7A.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "bg_ruins7A",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -40,9 +44,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"3ccbc13d-5a1a-43dc-a3e0-b47ff35e1eb7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dbcb8a0b-faf5-4378-be80-f9feb1ee5ce8","path":"sprites/bg_ruins7A/bg_ruins7A.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"bg_ruins7A","path":"sprites/bg_ruins7A/bg_ruins7A.yy",},
-    "resourceVersion": "1.4",
-    "name": "bg_ruins7A",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8149bb97-434c-4ef1-9781-8572f255857a","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8149bb97-434c-4ef1-9781-8572f255857a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "The Ruins",
     "path": "folders/Sprites/Backgrounds/The Ruins.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bg_ruins7A",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

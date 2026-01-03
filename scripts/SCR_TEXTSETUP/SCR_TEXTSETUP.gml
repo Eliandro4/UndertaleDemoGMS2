@@ -9,7 +9,4 @@ function SCR_TEXTSETUP(argument0, argument1, argument2, argument3, argument4, ar
 	txtsound=argument7 //what default sound
 	spacing=argument8 //text spacing
 	vspacing=argument9 //vertical spacing yep, old default was 25
-
-
-
 }

@@ -5,8 +5,6 @@ function scr_namingscreen() {
 	//selected2=0
 	//selected3=0
 	//q=0
-
-
 	draw_set_color(c_white)
 	draw_set_font(fnt_maintext)
 
@@ -259,8 +257,4 @@ function scr_namingscreen() {
 	       }
 	    }
 	}
-
-
-
-
 }

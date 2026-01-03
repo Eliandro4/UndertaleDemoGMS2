@@ -5,7 +5,6 @@ function scr_battlegroup() {
 	global.monster[2] = 0
 	global.monster[3] = 0
 
-
 	if global.battlegroup = 1 then
 	   {
 	   global.monstertype[0] = 1

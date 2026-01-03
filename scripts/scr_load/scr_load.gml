@@ -56,9 +56,4 @@ function scr_load() {
 	scr_tempsave()
 
 	room_goto(global.currentroom)
-
-
-
-
-
 }

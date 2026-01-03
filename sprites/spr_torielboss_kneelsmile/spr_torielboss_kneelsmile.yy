@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_torielboss_kneelsmile",
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 72,
   "height": 102,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"cdd2aa47-47c7-441c-8863-e5146cd147a4","path":"sprites/spr_torielboss_kneelsmile/spr_torielboss_kneelsmile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cdd2aa47-47c7-441c-8863-e5146cd147a4","path":"sprites/spr_torielboss_kneelsmile/spr_torielboss_kneelsmile.yy",},"LayerId":{"name":"ffbe43cf-b86e-43ec-b4a7-a074b4471200","path":"sprites/spr_torielboss_kneelsmile/spr_torielboss_kneelsmile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_torielboss_kneelsmile","path":"sprites/spr_torielboss_kneelsmile/spr_torielboss_kneelsmile.yy",},"resourceVersion":"1.0","name":"cdd2aa47-47c7-441c-8863-e5146cd147a4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cdd2aa47-47c7-441c-8863-e5146cd147a4",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_torielboss_kneelsmile","path":"sprites/spr_torielboss_kneelsmile/spr_torielboss_kneelsmile.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -40,9 +44,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"23dd51fd-e128-4697-9e63-f07cd1747832","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cdd2aa47-47c7-441c-8863-e5146cd147a4","path":"sprites/spr_torielboss_kneelsmile/spr_torielboss_kneelsmile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +62,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_torielboss_kneelsmile","path":"sprites/spr_torielboss_kneelsmile/spr_torielboss_kneelsmile.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ffbe43cf-b86e-43ec-b4a7-a074b4471200","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ffbe43cf-b86e-43ec-b4a7-a074b4471200","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Battle",
     "path": "folders/Sprites/Characters/Toriel/Battle.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_torielboss_kneelsmile",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

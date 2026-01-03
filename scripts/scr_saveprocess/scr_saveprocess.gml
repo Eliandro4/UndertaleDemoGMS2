@@ -31,10 +31,10 @@ function scr_saveprocess() {
 
 	for (i=0; i<8; i+=1)
 	{
-	file_text_write_real(myfileid, (global.item[i]))
-	file_text_writeln(myfileid)
-	file_text_write_real(myfileid, (global.phone[i]))
-	file_text_writeln(myfileid)
+		file_text_write_real(myfileid, (global.item[i]))
+		file_text_writeln(myfileid)
+		file_text_write_real(myfileid, (global.phone[i]))
+		file_text_writeln(myfileid)
 	}
 
 	file_text_write_real(myfileid, (global.weapon))
@@ -44,16 +44,16 @@ function scr_saveprocess() {
 
 	for (i=0; i<512; i+=1)
 	{
-	file_text_write_real(myfileid, (global.flag[i]))
-	file_text_writeln(myfileid)
+		file_text_write_real(myfileid, (global.flag[i]))
+		file_text_writeln(myfileid)
 	}
 	file_text_write_real(myfileid, (global.plot))
 	file_text_writeln(myfileid)
 
 	for (i=0; i<3; i+=1)
 	{
-	file_text_write_real(myfileid, (global.menuchoice[i]))
-	file_text_writeln(myfileid)
+		file_text_write_real(myfileid, (global.menuchoice[i]))
+		file_text_writeln(myfileid)
 	}
 
 	file_text_write_real(myfileid, (global.currentsong))
@@ -63,7 +63,4 @@ function scr_saveprocess() {
 	file_text_write_real(myfileid, (obj_time.time))
 
 	file_text_close(myfileid)
-
-
-
 }

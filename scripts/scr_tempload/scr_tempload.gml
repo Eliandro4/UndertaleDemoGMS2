@@ -3,9 +3,4 @@ function scr_tempload() {
 	global.filechoice=9
 	scr_load()
 	global.filechoice=filechoicebk3
-
-
-
-
-
 }

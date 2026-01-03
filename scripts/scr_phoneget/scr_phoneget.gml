@@ -3,7 +3,7 @@ function scr_phoneget(argument0) {
 	i=0
 	loop=1
 	global.phone[8]=999
-	while (loop=1)
+	while (loop == 1)
 	   {
 	     if global.phone[i]=0 then
 	        {
@@ -17,10 +17,6 @@ function scr_phoneget(argument0) {
 	        }
 	        i+=1
 	   }
-
 	//TODO: Actually checks if i need to put arguments here
 	scr_phonename(argument0)
-
-
-
 }

@@ -32,7 +32,4 @@ function scr_levelup() {
 	  global.df+=(global.lv-currentlevel)
 	  }
 	  else levelup=false
-
-
-
 }

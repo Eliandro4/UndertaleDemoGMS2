@@ -10,7 +10,4 @@ function action_set_motion(argument0, argument1) {
 	}  // end if
 	direction = dir;
 	speed = spd;
-
-
-
 }

@@ -1,5 +1,4 @@
 function scr_itemnamelist() {
-
 	switch(itemid)
 	{
 	case 0:
@@ -45,7 +44,4 @@ function scr_itemnamelist() {
 	        global.itemname[i]="Toy Knife"
 	        break;
 	}
-
-
-
 }

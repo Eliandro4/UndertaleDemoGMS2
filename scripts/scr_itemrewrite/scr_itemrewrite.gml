@@ -4,7 +4,4 @@ function scr_itemrewrite() {
 	if global.bmenuno=3 then global.msc=9
 	if global.bmenuno=3.5 then global.msc=10
 	instance_create(global.idealborder[0],global.idealborder[2],OBJ_INSTAWRITER)
-
-
-
 }

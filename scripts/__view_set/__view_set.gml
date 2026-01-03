@@ -8,6 +8,4 @@ function __view_set(argument0, argument1, argument2) {
 	var __res = __view_get(__prop, __index);
 
 	return __res;
-
-
 }

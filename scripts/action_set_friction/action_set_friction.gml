@@ -6,7 +6,4 @@ function action_set_friction(argument0) {
 		val += friction;
 	}  // end if
 	friction = val;
-
-
-
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_toriel_d_phone",
   "bboxMode": 1,
   "collisionKind": 0,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 32,
   "height": 58,
   "textureGroupId": {
@@ -24,24 +28,16 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b5e8d6a9-5139-4ca9-af3e-8a5b3fee4589","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b5e8d6a9-5139-4ca9-af3e-8a5b3fee4589","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"LayerId":{"name":"21c9920b-ed4a-41b6-b3d9-a8a9df14bb3b","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_toriel_d_phone","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"resourceVersion":"1.0","name":"b5e8d6a9-5139-4ca9-af3e-8a5b3fee4589","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ea46157f-3219-43b3-8931-10a514ce06a7","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ea46157f-3219-43b3-8931-10a514ce06a7","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"LayerId":{"name":"21c9920b-ed4a-41b6-b3d9-a8a9df14bb3b","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_toriel_d_phone","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"resourceVersion":"1.0","name":"ea46157f-3219-43b3-8931-10a514ce06a7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ca63ea13-3eee-41e7-8501-03f87d6f6899","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ca63ea13-3eee-41e7-8501-03f87d6f6899","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"LayerId":{"name":"21c9920b-ed4a-41b6-b3d9-a8a9df14bb3b","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_toriel_d_phone","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"resourceVersion":"1.0","name":"ca63ea13-3eee-41e7-8501-03f87d6f6899","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"dd8c2064-f296-4545-8b8e-5e3a27b16f67","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dd8c2064-f296-4545-8b8e-5e3a27b16f67","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"LayerId":{"name":"21c9920b-ed4a-41b6-b3d9-a8a9df14bb3b","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_toriel_d_phone","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"resourceVersion":"1.0","name":"dd8c2064-f296-4545-8b8e-5e3a27b16f67","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b040d6a2-166a-4003-b67d-84b50d6c71fc","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b040d6a2-166a-4003-b67d-84b50d6c71fc","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"LayerId":{"name":"21c9920b-ed4a-41b6-b3d9-a8a9df14bb3b","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_toriel_d_phone","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"resourceVersion":"1.0","name":"b040d6a2-166a-4003-b67d-84b50d6c71fc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b5e8d6a9-5139-4ca9-af3e-8a5b3fee4589",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ea46157f-3219-43b3-8931-10a514ce06a7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ca63ea13-3eee-41e7-8501-03f87d6f6899",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dd8c2064-f296-4545-8b8e-5e3a27b16f67",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b040d6a2-166a-4003-b67d-84b50d6c71fc",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_toriel_d_phone","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -52,13 +48,13 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"f8a6d114-53a8-49d4-8ae8-c426c8c0ae68","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b5e8d6a9-5139-4ca9-af3e-8a5b3fee4589","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"0a0ffc6f-f22b-477a-8ce2-fceb798cbc96","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ea46157f-3219-43b3-8931-10a514ce06a7","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"dcacc944-4e30-4cec-9b8e-7eae0251efae","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ca63ea13-3eee-41e7-8501-03f87d6f6899","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b18ead6f-5180-42b7-bbfc-a0fba0c96a44","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dd8c2064-f296-4545-8b8e-5e3a27b16f67","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"cfa32713-49b7-4f85-a580-6c1e1d22439d","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b040d6a2-166a-4003-b67d-84b50d6c71fc","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -74,22 +70,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_toriel_d_phone","path":"sprites/spr_toriel_d_phone/spr_toriel_d_phone.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"21c9920b-ed4a-41b6-b3d9-a8a9df14bb3b","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"21c9920b-ed4a-41b6-b3d9-a8a9df14bb3b","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "OverWorld",
     "path": "folders/Sprites/Characters/Toriel/OverWorld.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_toriel_d_phone",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -179,7 +179,4 @@ function scr_monstersetup() {
 	   global.itemrewardid = 0
 	   global.itemrewardchance = 0
 	   }
-
-
-
 }

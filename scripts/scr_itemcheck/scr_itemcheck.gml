@@ -5,7 +5,4 @@ function scr_itemcheck(argument0) {
 	  {
 	  if global.item[i]=argument0 then haveit=1
 	  }
-
-
-
 }

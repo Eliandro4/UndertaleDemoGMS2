@@ -10,7 +10,4 @@ function action_set_gravity(argument0, argument1) {
 	}  // end if
 	gravity = val;
 	gravity_direction = dir;
-
-
-
 }

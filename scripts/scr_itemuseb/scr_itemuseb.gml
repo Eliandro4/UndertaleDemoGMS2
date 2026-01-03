@@ -210,8 +210,4 @@ function scr_itemuseb(argument0, argument1) {
 	         }
 	        break;
 	}
-
-
-
-
 }

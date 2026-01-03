@@ -7,7 +7,4 @@ function scr_gameoverb() {
 	global.myxb = obj_heart.x
 	global.myyb = obj_heart.y 
 	room_goto(room_gameover)
-
-
-
 }

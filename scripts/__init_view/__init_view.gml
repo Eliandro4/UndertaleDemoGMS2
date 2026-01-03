@@ -19,6 +19,4 @@ function __init_view() {
 		Camera,
 		SurfaceID,
 	};
-
-
 }

@@ -11,7 +11,4 @@ function scr_begin() {
 	screen_refresh();
 
 	}*/
-
-
-
 }

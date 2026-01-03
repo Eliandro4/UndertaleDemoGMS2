@@ -15,6 +15,4 @@ function action_create_object(argument0, argument1, argument2) {
 	} else {
 		instance_create( argument1, argument2, argument0);
 	}
-
-
 }

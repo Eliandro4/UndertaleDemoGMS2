@@ -69,7 +69,4 @@ function SCR_BORDERSETUP() {
 	global.idealborder[2] = 290
 	global.idealborder[3] = 385
 	}
-
-
-
 }

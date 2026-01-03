@@ -10,6 +10,4 @@ function __init_action() {
 		global.__part_type[i] = -1;
 		global.__part_emit[i] = -1;
 	}
-
-
 }

@@ -27,7 +27,4 @@ function scr_monsterdefeat() {
 	}
 
 	global.monster[myself] = 0
-
-
-
 }

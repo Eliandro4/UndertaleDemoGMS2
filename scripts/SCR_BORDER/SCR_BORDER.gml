@@ -21,7 +21,4 @@ function SCR_BORDER(argument0, argument1) {
 	yy = round(random(global.idealborder[3] - global.idealborder[2])) + global.idealborder[2]
 	xx = global.idealborder[1] - argument1
 	}
-
-
-
 }

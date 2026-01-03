@@ -346,7 +346,6 @@ function __global_object_depths() {
 	global.__objectDepths[338] = 0; // OBJ_WRITERCREATOR
 	global.__objectDepths[339] = 0; // object59
 
-
 	global.__objectNames[0] = "blt_avoidfire";
 	global.__objectNames[1] = "blt_blookhat";
 	global.__objectNames[2] = "blt_bluespear";
@@ -688,7 +687,6 @@ function __global_object_depths() {
 	global.__objectNames[338] = "OBJ_WRITERCREATOR";
 	global.__objectNames[339] = "object59";
 
-
 	// create another array that has the correct entries
 	var len = array_length_1d(global.__objectDepths);
 	global.__objectID2Depth = [];
@@ -698,6 +696,4 @@ function __global_object_depths() {
 			global.__objectID2Depth[ objID ] = global.__objectDepths[i];
 		} // end if
 	} // end for
-
-
 }

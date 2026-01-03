@@ -3,7 +3,4 @@ function scr_attack() {
 	{
 	instance_create(global.idealborder[0]+6, global.idealborder[2]+6, obj_target)
 	}
-
-
-
 }

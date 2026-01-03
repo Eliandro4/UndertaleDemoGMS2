@@ -6,7 +6,4 @@ function action_set_hspeed(argument0) {
 		val += hspeed;
 	}  // end if
 	hspeed = val;
-
-
-
 }

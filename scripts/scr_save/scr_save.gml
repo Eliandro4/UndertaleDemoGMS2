@@ -12,7 +12,4 @@ function scr_save() {
 	ini_write_real("General","Kills",global.kills)
 	ini_write_real("General","Room",room)
 	ini_close()
-
-
-
 }

@@ -3,7 +3,4 @@ function scr_end() {
 	// Obsolete
 	/*if !surface_exists(screen) screen = surface_create(screen_w,screen_h);
 	surface_set_target(screen);*/
-
-
-
 }

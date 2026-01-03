@@ -9,7 +9,4 @@ function scr_binfowrite() {
 	if global.hp<10 then hpwrite="0"+string(global.hp)
 	draw_text(290+global.maxhp*1.2,400,string_hash_to_newline(hpwrite+ " / "+string(global.maxhp)))
 	draw_text(30,400,string_hash_to_newline(string(global.charname) +"   LV " + string(global.lv)))
-
-
-
 }

@@ -3,9 +3,6 @@ function scr_itemnameb() {
 	{
 	itemid=global.item[i]
 
-
-
-
 	switch(itemid)
 	{
 	case 1:
@@ -55,12 +52,5 @@ function scr_itemnameb() {
 	        global.itemnameb[i]="Toy Knife"
 	        break;
 	}
-
-
-
-
 	}
-
-
-
 }

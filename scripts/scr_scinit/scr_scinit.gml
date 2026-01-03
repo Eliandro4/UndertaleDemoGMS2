@@ -11,8 +11,5 @@ function scr_scinit() {
 	screen = surface_create(screen_w,screen_h);
 
 	// this will destroy the screen object if surfaces are not supported on the graphics card, reverting to the viewport method
-	if screen = -1{instance_destroy();}*/
-
-
-
+	if (screen == -1) {instance_destroy();}*/
 }

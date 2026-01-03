@@ -3,7 +3,4 @@ function caster_free(argument0) {
 	    audio_stop_sound(argument0)
 	else
 	    audio_stop_all()
-
-
-
 }

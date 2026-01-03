@@ -34,12 +34,10 @@ function SCR_TEXT(argument0) {
 	     }
 	     global.msg[1]="%%%";
 	     break;
-
 	case 7:
 	     global.msg[0]="   * Spare"
 	     if global.mercy=0 then global.msg[0]+="&   * Flee"
 	     break;
-
 	case 9: //itemnames for first menu
 	     global.msg[0] = "   * " + global.itemnameb[0] + "     "
 	     if global.item[1]!=0 then global.msg[0]+= "* " + global.itemnameb[1]
@@ -58,7 +56,6 @@ function SCR_TEXT(argument0) {
 	     global.msg[0]+=" &                     PAGE 2"
 	     global.msg[1]="%%%"
 	     break;
-     
 	case 11: //recovery item add
 	     global.msg[0] += " &"
 	     if global.item[8] < 9990 then
@@ -67,7 +64,6 @@ function SCR_TEXT(argument0) {
 	     }
 	     else global.msg[0] += "* Your HP was maxed out./%"
 	     break;
-
 	case 12: //throwing away an item
 	     i=round(random(14))
 	     if i=0 then global.msg[0]="* You bid a quiet farewell&  to the " + global.itemname[global.menucoord[1]] + "."
@@ -78,8 +74,6 @@ function SCR_TEXT(argument0) {
 	     if i>3 then global.msg[0]="* The " + global.itemname[global.menucoord[1]] + " was&  thrown away."
 	     global.msg[0]+="/%"
 	     break;
-     
-
 	case 14: //RUNNING AWAY
 	     i=round(random(20))
 	     if i=0 or i=1 then global.msg[0]="   * I'm outta here."
@@ -87,7 +81,6 @@ function SCR_TEXT(argument0) {
 	     if i>3 then global.msg[0]="   * Escaped..."
 	     if i=3 then global.msg[0]="   * Don't slow me down."
 	     break;
-     
 	case 15: //save pt
 	     if room=room_ruins1 then global.msg[0]="* (The shadow of the ruins&  looms above^1, filling you with&  determination.)/%%"
 	     if room=room_ruins7 then global.msg[0]="* (Playfully crinkling through&  the leaves fills you with&  determination.)/%%"
@@ -95,7 +88,6 @@ function SCR_TEXT(argument0) {
 	     if room=room_ruins19 then global.msg[0]="* (Seeing such a cute^1, tidy&  house in the RUINS gives&  you determination.)/%%"
 	     if global.flag[202]>=monsterpopulation1 then global.msg[0]="* Determination./%%"
 	     break;
-     
 	case 16: //putting away an item
 	     i=round(random(14))
 	     //TODO: Actually checks if i need to put arguments here
@@ -105,7 +97,6 @@ function SCR_TEXT(argument0) {
 	     if i>13 then global.msg[0]="* The " + global.itemname[global.menucoord[6]] + " was&  placed thoughtfully inside."
 	     global.msg[0]+="/%"
 	     break;
-     
 	case 17: //getting an item
 	     i=round(random(14))
 	     scr_storagename(300)
@@ -114,21 +105,17 @@ function SCR_TEXT(argument0) {
 	     if i>13 then global.msg[0]="* The " + global.itemname[global.menucoord[7]] + " was&  taken out and held like a&  small puppy."
 	     global.msg[0]+="/%"
 	     break;
-
 	case 18: //can't carry any more
 	        global.msg[0]="* You can't carry any more./%%"
 	        break;
-        
 	case 19: //can't carry any more
 	        global.msg[0]="* The box is full./%%"
 	        break;
-
 	case 30: //itembox1
 	        global.msg[0]="* Use the box?& &         Yes         No      \\C /"
 	        global.msg[1]=" "
 	        global.msg[2]=" "
 	        break;
-        
 	case 31: //itembox2
 	        if global.choice=0 then
 	          {
@@ -138,7 +125,6 @@ function SCR_TEXT(argument0) {
 	          }
 	        if global.choice=1 then global.msg[0]="%%"
 	        break;
-        
 	case 32: //itembox2
 	        if global.choice=0 then
 	          {
@@ -157,11 +143,7 @@ function SCR_TEXT(argument0) {
 	         global.msg[0]="%%"
 	          }
 	          break;
-         
-     
-     
 	// main script
-     
 	case 200: //flowey's first message
 	     global.msg[0]="\\W* Howdy^2!&* I'm\\Y FLOWEY\\W.^2 &* \\YFLOWEY\\W the \\YFLOWER\\W!/"
 	     global.msg[1]="* Hmmm.../"
@@ -171,38 +153,31 @@ function SCR_TEXT(argument0) {
 	     global.msg[5]="* I guess little old me&  will have to do./"
 	     global.msg[6]="* Ready^2?&* Here we go!/%%"
 	     break;
-     
 	case 201: //toriel says "this way"
 	     global.msg[0]="\\E2* This way./%%"
 	     global.msg[1]="%%%"
 	     break;
-     
 	case 202: //toriel from here on
 	     global.msg[0]="\\E2* Welcome to your new&  home^1, innocent one./"
 	     global.msg[1]="* Allow me to educate you&  in the operation of the&  RUINS./%%"
 	     break;
-     
 	case 203:
 	     global.msg[0]="\\E2* The RUINS are full of&  puzzles./"
 	     global.msg[1]="* Ancient fusions between &  diversions and doorkeys./"
 	    global.msg[2]="* One must solve them&  to move from room to&  room./"
 	    global.msg[3]="* Please adjust yourself    to the sight of them./%"
 	    break;
-
 	case 204:
 	    global.msg[0]="\\E2* To make progress here,^1 &  you will need to trigger&  several switches./"
 	    global.msg[1]="* Do not worry,^1 I have &  labelled the ones that&  you need to flip./%"
 	    break;
-
 	case 205:
 	    global.msg[0]="\\E2* The first switch is over&  on the wall./%"
 	    break;
-
 	case 206:
 	    global.msg[0]="\\E1* Do you need some help..^1?&* Press the switch on the   wall./"
 	    global.msg[1]="\\E0* Come on^1, you can do it!/%"
 	    break;
-
 	case 207:
 	    global.msg[0]="\\E2* Go on^1, press the switch&  on the left./%"
 	    break;    
@@ -210,61 +185,54 @@ function SCR_TEXT(argument0) {
 	    global.msg[0]="\\E1* You do know which way&  left is^1, do you not?/"
 	    global.msg[1]="\\E0* Press the switch that I&  labelled for you./%"
 	    break;
-
 	case 209:
-	global.msg[0]="\\E1* You are very curious,^1 &  are you not?/"
-	global.msg[1]="\\E1* Please understand.^2 & \\E0I only want the best&  for you./%"
-	break;
-
+		global.msg[0]="\\E1* You are very curious,^1 &  are you not?/"
+		global.msg[1]="\\E1* Please understand.^2 & \\E0I only want the best&  for you./%"
+		break;
 	case 210:
-	global.msg[0]="\\E0* Splendid!^2 &* I am proud of you,^1 &  little one./"
-	global.msg[1]="* Let us move to the&  next room./%"
-	break;
-
+		global.msg[0]="\\E0* Splendid!^2 &* I am proud of you,^1 &  little one./"
+		global.msg[1]="* Let us move to the&  next room./%"
+		break;
 	case 211:
-	global.msg[0]="\\E1* As a human living in&  the UNDERGROUND,^1 &  monsters may attack you./"
-	global.msg[1]="\\E2* You will need to be&  prepared for this&  situation./"
-	global.msg[2]="\\E0* However, worry not!^2 &* The process is simple./"
-	global.msg[3]="\\E2* When you encounter a &  monster,^1 you will enter&  a FIGHT./"
-	global.msg[4]="* While you are in a&  FIGHT^1, strike up a&  friendly conversation./"
-	global.msg[5]="\\E2* Stall for time.&  I will come to resolve&  the conflict./"
-	global.msg[6]="\\E2* Practice talking to&  the dummy./%"
-	break;
-
+		global.msg[0]="\\E1* As a human living in&  the UNDERGROUND,^1 &  monsters may attack you./"
+		global.msg[1]="\\E2* You will need to be&  prepared for this&  situation./"
+		global.msg[2]="\\E0* However, worry not!^2 &* The process is simple./"
+		global.msg[3]="\\E2* When you encounter a &  monster,^1 you will enter&  a FIGHT./"
+		global.msg[4]="* While you are in a&  FIGHT^1, strike up a&  friendly conversation./"
+		global.msg[5]="\\E2* Stall for time.&  I will come to resolve&  the conflict./"
+		global.msg[6]="\\E2* Practice talking to&  the dummy./%"
+		break;
 	case 212:
-	if global.flag[12]=1
-	   {
-	   global.msg[0]="\\E1* Ahh,^1 the dummies are&  not for fighting!^2 &* They are for talking!/"
-	   global.msg[1]="* We do not want to hurt&  anybody, do we...?^2 \\E0 &* Come now./%"
-	   }
-	if global.flag[10]=1
-	   {
-	   global.msg[0]="\\E0* Ah,^1 very good!^2 &* You are very good./%"
-	   }
-	if global.flag[11]=1
-	   {
-	global.msg[0]="\\E1* .../"
-	global.msg[1]="\\E1* ... you ran away.../"
-	global.msg[2]="\\E0* Truthfully^1, that was&  not a poor choice./"
-	global.msg[3]="\\E0* It is better to&  avoid conflict&  whenever possible./"
-	global.msg[4]="\\E1* That..^1. however^1, is&  only a dummy^2.&* It cannot harm you./"
-	global.msg[5]="\\E1* It is made of cotton^1.&* It has no desire&  for revenge.../"
-	global.msg[6]="\\E0* Nevermind^2.&* Stay close to me and&  I will keep you safe./%"  
-	   }
-	if global.flag[13]=1
-	   {
-	global.msg[0]="\\E3* ^1.^1.^1./"
-	global.msg[1]="\\E4* ^1.^1.^1./"
-	global.msg[2]="\\E0* The next room awaits./%"
-	  }
-	break;
-
+		if global.flag[12]=1
+		{
+			global.msg[0]="\\E1* Ahh,^1 the dummies are&  not for fighting!^2 &* They are for talking!/"
+			global.msg[1]="* We do not want to hurt&  anybody, do we...?^2 \\E0 &* Come now./%"
+		}
+		if global.flag[10]=1
+		{
+			global.msg[0]="\\E0* Ah,^1 very good!^2 &* You are very good./%"
+		}
+		if global.flag[11]=1
+		{
+			global.msg[0]="\\E1* .../"
+			global.msg[1]="\\E1* ... you ran away.../"
+			global.msg[2]="\\E0* Truthfully^1, that was&  not a poor choice./"
+			global.msg[3]="\\E0* It is better to&  avoid conflict&  whenever possible./"
+			global.msg[4]="\\E1* That..^1. however^1, is&  only a dummy^2.&* It cannot harm you./"
+			global.msg[5]="\\E1* It is made of cotton^1.&* It has no desire&  for revenge.../"
+			global.msg[6]="\\E0* Nevermind^2.&* Stay close to me and&  I will keep you safe./%"  
+		}
+		if global.flag[13]=1
+		{
+			global.msg[0]="\\E3* ^1.^1.^1./"
+			global.msg[1]="\\E4* ^1.^1.^1./"
+			global.msg[2]="\\E0* The next room awaits./%"
+		}
+		break;
 	case 213:
-	global.msg[0]="\\E2* Practice talking to&  the dummy./"
-	global.msg[1]="\\E1* You can say anything..^2.\\E2 &* I do not think the dummy&  will be bothered./%"
-	break;
-
-
+		global.msg[0]="\\E2* Practice talking to&  the dummy./"
+		global.msg[1]="\\E1* You can say anything..^2.\\E2 &* I do not think the dummy&  will be bothered./%"
+		break;
 	case 214:
 	global.msg[0]="\\E0* Do you need some&  ideas for conversation&  topics?/"
 	global.msg[1]="* Well^1, I often start with&  a simple 'how do you&  do...'/"
@@ -929,8 +897,7 @@ function SCR_TEXT(argument0) {
 	       global.msg[6]="\\TS \\F0 \\T0 %"
 	       global.msg[7]="* Click.../%%"
 	       }
-	        break;
-        
+	       break; 
 	case 1502:
 	     global.msg[0]="* Dialing..\\E0.\\TT /"
 	     global.msg[1]="\\F1 %"
@@ -941,7 +908,6 @@ function SCR_TEXT(argument0) {
 	     global.msg[6]="\\TS \\F0 \\T0 %"
 	     global.msg[7]="* Click.../%%"
 	     break;
-
 	case 1503: // about yourself
 	     global.msg[0]="* Dialing..\\E0.\\TT /"
 	     global.msg[1]="\\F1 %"
@@ -952,7 +918,6 @@ function SCR_TEXT(argument0) {
 	     global.msg[6]="\\TS \\F0 \\T0 %"
 	     global.msg[7]="* Click.../%%"
 	     break;
-
 	case 1504: // call her mom
 	     global.flag[42]=1
 	     global.msg[0]="* Dialing..\\E0.\\TT /"
@@ -966,7 +931,6 @@ function SCR_TEXT(argument0) {
 	     global.msg[8]="\\TS \\F0 \\T0 %"
 	     global.msg[9]="* Click.../%%"
 	     break;
-     
 	case 1505: // flirt
 	     if doak=0 then
 	        {
@@ -1001,14 +965,12 @@ function SCR_TEXT(argument0) {
 	                }
 	     }
 	     break;
-
 	case 1506: // nobody's home
 	     global.flag[42]=1
 	     global.msg[0]="* Dialing... /"
 	     global.msg[1]="* ... /"
 	     global.msg[2]="* No one picked up.../%%"
 	     break;
-
 	case 1507:
 	     global.faceemotion=99
 	     global.msg[0]="* Dialing...\\TT /"
@@ -1018,17 +980,11 @@ function SCR_TEXT(argument0) {
 	     global.msg[4]="\\TS \\F0 \\T0 %"
 	     global.msg[5]="* Click.../%%"
 	     break;
-
-
-
-
 	// npc dialogue
 	case 2001:
 	     global.msg[0]="\\E2* Welcome to your new& home,^1 innocent one./"
 	     global.msg[1]="* Allow me to educate you&  in the operation of&  the RUINS./%"
 	     break;
-
-
 	case 2002: // toriel flirt phone call
 	     global.faceplate=1
 	     global.msg[0]="\\E8* ...^2 huh???/"
@@ -1043,37 +999,30 @@ function SCR_TEXT(argument0) {
 	     // "\E0*
 	     // "
 	     break;
-     
 	case 3002: //battle intro messages
 	     global.msg[0]="* You encountered the Dummy."
 	     global.msg[1]="%%%"     
 	     break;
-
 	case 3003: //froggit
 	     global.msg[0]="* Froggit attacks you!"
 	     global.msg[1]="%%%"     
 	     break;
-     
 	case 3004: //froggit
 	     global.msg[0]="* Froggit hopped close!"
 	     global.msg[1]="%%%"     
 	     break;
-
 	case 3005: //whimsun
 	     global.msg[0]="* Whimsun approached meekly!"
 	     global.msg[1]="%%%"     
 	     break;
-     
 	case 3006: //whimsun
 	     global.msg[0]="* Froggit and Whimsun drew near!"
 	     global.msg[1]="%%%"     
 	     break;
-
 	case 3007: //moldsmal
 	     global.msg[0]="* Moldsmal blocked the way!"
 	     global.msg[1]="%%%"     
-	     break;     
-               
+	     break;
 	case 9999: // test line
 	     i=0
 	     fileid=file_text_open_read("testlines.txt")
@@ -1085,21 +1034,5 @@ function SCR_TEXT(argument0) {
 	        }
 	     file_text_close(fileid)
 	     break;
-         
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
 	}
-
-
-
 }

@@ -8,11 +8,8 @@ function scr_npcsetup(argument0) {
 	//argument0 = movement type
 	//2 = faces different directions, talks
 	//1 = only animates in place
-	if movementtype=2 then
+	if (movementtype == 2)
 	{
-	facing=0
+		facing=0
 	}
-
-
-
 }

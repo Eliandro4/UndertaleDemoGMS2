@@ -10,7 +10,4 @@ function scr_itemshift(argument0, argument1) {
 	//TODO: Actually checks if i need to put arguments here
 	scr_itemnameb(argument1)
 	scr_itemname(argument0)
-
-
-
 }

@@ -29,7 +29,4 @@ function action_move(argument0, argument1) {
 		case 7: direction = 90; break;
 		case 8: direction = 45; break;
 	}
-
-
-
 }

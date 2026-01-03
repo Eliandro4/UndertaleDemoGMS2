@@ -16,7 +16,4 @@ function scr_facechoice() {
 	{
 	instance_create(writer.x-35,writer.y+25,obj_face_papyrus)
 	}
-
-
-
 }

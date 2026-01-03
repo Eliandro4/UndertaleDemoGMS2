@@ -46,8 +46,4 @@ function scr_itemdesc(argument0) {
 	        global.msg[0] = "* \"Toy Knife\" - Weapon AT 3&* Made of plastic.&* A rarity nowadays./%"
 	        break;
 	}
-
-
-
-
 }

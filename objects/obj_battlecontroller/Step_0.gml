@@ -1,52 +1,50 @@
 script_execute(SCR_BORDERSETUP,0,0,0,0,0);
 currentplace=global.bmenuno
 
-
-
-if global.monster[0] = 0
-if global.monster[1] = 0
-if global.monster[2] = 0
+if global.monster[0] == 0
+if global.monster[1] == 0
+if global.monster[2] == 0
 if won = 0
-    {
-    won = 1
-    global.xp += global.xpreward[3]
-    global.gold += global.goldreward[3]
-    tlvl=global.lv
-    scr_levelup()
-    caster_stop(global.batmusic)
-    caster_free(global.batmusic)
-    global.msg[0]="* YOU WON!&* You earned "
-    global.msg[0]+= string(global.xpreward[3]) + " XP and "
-    global.msg[0]+= string(global.goldreward[3]) + " gold."
-    if tlvl!=global.lv then { global.msg[0]+="&* Your LOVE increased."; sound_play(snd_levelup) }
-    global.msg[0]+="/%"
-    if global.extraintro=2 then
-       {
-       global.typer=5
-       if global.flag[202]>=monsterpopulation1 then
-         {
+   {
+   won = 1
+   global.xp += global.xpreward[3]
+   global.gold += global.goldreward[3]
+   tlvl=global.lv
+   scr_levelup()
+   caster_stop(global.batmusic)
+   caster_free(global.batmusic)
+   global.msg[0]="* YOU WON!&* You earned "
+   global.msg[0]+= string(global.xpreward[3]) + " XP and "
+   global.msg[0]+= string(global.goldreward[3]) + " gold."
+   if tlvl!=global.lv then { global.msg[0]+="&* Your LOVE increased."; sound_play(snd_levelup) }
+   global.msg[0]+="/%"
+   if global.extraintro=2 then
+   {
+      global.typer=5
+      if global.flag[202]>=monsterpopulation1 then
+      {
          caster_free(global.currentsong)
          audio_stop_sound(mus_battle1)
          global.currentsong=caster_load("music/toomuch.ogg")
          caster_loop(global.currentsong,1,1)
          global.flag[221]=1
-         }
-         else
-         {
+      }
+      else
+      {
          caster_free(global.currentsong)
          global.currentsong="music/silence.ogg"
          caster_load(global.currentsong)
          caster_loop(global.currentsong,1,1)
-         }
-       global.msg[0]=global.msg[2]
-       global.myfight=0
-       global.mnfight=2
-       obj_heart.x=-200
-       }
-    global.msc=0
-    instance_create(global.idealborder[0],global.idealborder[2],OBJ_WRITER)
-    exit
-    }
+      }
+      global.msg[0]=global.msg[2]
+      global.myfight=0
+      global.mnfight=2
+      obj_heart.x=-200
+   }
+   global.msc=0
+   instance_create(global.idealborder[0],global.idealborder[2],OBJ_WRITER)
+   exit
+   }
     
 
 if global.mnfight = 0 and global.myfight = 0 then
@@ -55,32 +53,31 @@ if global.mnfight = 0 and global.myfight = 0 then
 // menu 0 = fight,spell,etc. 1 = fight choice 2 = talk choice 10 = talk select 3 = item choice 3.5 = itemchoicepg2 11 = item target select 4 = spare choice
 // 6 = 2ndary talk choice 7 = tertiary talk choice 8 = quaternary talk choice 9 = quintuple talk choice
   global.typer = 1
-  if keyboard_multicheck_pressed(vk_shift) = false then
-  if keyboard_multicheck_pressed(vk_enter) then
+  if (keyboard_multicheck_pressed(vk_shift) == false) then
+  if (keyboard_multicheck_pressed(vk_enter)) then
      {
-      if global.bmenuno = 0 then
+      if (global.bmenuno == 0) then
        { 
        global.talked = -1
        global.bmenucoord[2] = 0
        global.bmenuno = (global.bmenucoord[0] + 1)
-       if global.bmenuno = 1 || global.bmenuno=2 || global.bmenuno=11 then
+       if ((global.bmenuno == 1) || (global.bmenuno==2) ||( global.bmenuno==11)) then
              {
                global.msc = 3
-               if global.monster[global.bmenucoord[1]] = 0 then global.bmenucoord[1] += 1
-               if global.monster[global.bmenucoord[1]] = 0 then global.bmenucoord[1] += 1
-               if global.monster[0] = 0 and global.monster[2] = 0 then global.bmenucoord[1] = 1
-               if global.bmenucoord[1] > 2 then
+               if (global.monster[global.bmenucoord[1]] == 0) then global.bmenucoord[1] += 1
+               if (global.monster[global.bmenucoord[1]] == 0) then global.bmenucoord[1] += 1
+               if ((global.monster[0] == 0) and (global.monster[2] == 0)) then global.bmenucoord[1] = 1
+               if (global.bmenucoord[1] > 2) then
                     {
                     global.bmenucoord[1] = 0
-                    if global.monster[0] = 0 then global.bmenucoord[1] = 1
-                    if global.monster[1] = 0 then global.bmenucoord[1] = 2
-                    if global.monster[2] = 0 then global.bmenucoord[1] = 0
+                    if ( global.monster[0] == 0) then global.bmenucoord[1] = 1
+                    if (global.monster[1] == 0) then global.bmenucoord[1] = 2
+                    if (global.monster[2] == 0) then global.bmenucoord[1] = 0
                     }
-      
-               }
-      if global.bmenuno = 3 then
+            }
+      if (global.bmenuno == 3) then
              {
-         if global.item[0]!= 0 then
+         if (global.item[0] != 0) then
               {
                 global.bmenucoord[3]=0
                 scr_itemnameb()
@@ -89,7 +86,7 @@ if global.mnfight = 0 and global.myfight = 0 then
                }
             else global.bmenuno=0
              }
-      if global.bmenuno = 4 then global.msc=7            
+      if (global.bmenuno = 4) then global.msc=7            
               global.msg[4] = global.msg[0]
               sound_play(snd_select)
               with( OBJ_WRITER )
@@ -102,7 +99,7 @@ if global.mnfight = 0 and global.myfight = 0 then
        }
   // if you are already in a menu
        
-     if global.bmenuno = 1 then
+     if (global.bmenuno == 1) then
          {
          global.mytarget = global.bmenucoord[1]
          with( OBJ_WRITER )
@@ -115,7 +112,7 @@ if global.mnfight = 0 and global.myfight = 0 then
          scr_attack()
          keyboard_clear(vk_enter)
          }
-       if global.bmenuno = 10 then
+       if (global.bmenuno == 10) then
          {
          global.talked = global.bmenucoord[2]
          global.mntrg = global.monsterinstance[global.mytarget]
@@ -129,7 +126,7 @@ if global.mnfight = 0 and global.myfight = 0 then
          obj_heart.x = -200
          keyboard_clear(vk_enter)
          }
-   if global.bmenuno = 2 then
+   if (global.bmenuno =- 2) then
          {
          global.mytarget = global.bmenucoord[1]
          with( OBJ_WRITER )
@@ -141,7 +138,7 @@ if global.mnfight = 0 and global.myfight = 0 then
          instance_create(global.idealborder[0],global.idealborder[2],OBJ_INSTAWRITER)
          keyboard_clear(vk_enter)
          }
-   if global.bmenuno = 3 || global.bmenuno=3.5 then // items
+   if ((global.bmenuno == 3) || (global.bmenuno == 3.5)) then // items
          {
          if keyboard_check(vk_right)=false and keyboard_check(vk_left)=false
           {

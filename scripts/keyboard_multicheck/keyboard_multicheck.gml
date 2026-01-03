@@ -8,7 +8,4 @@ function keyboard_multicheck(argument0) {
 	// 0 = enter/z
 	// 1 = shift/X
 	// 2 = ctrl/C
-
-
-
 }

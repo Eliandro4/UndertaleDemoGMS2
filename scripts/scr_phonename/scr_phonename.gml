@@ -1,17 +1,13 @@
 function scr_phonename() {
 	for (i=0;i<8;i+=1)
 	{
-	global.phonename[i]=" "
+		global.phonename[i]=" "
 	}
 
 	for (i=0;i<8;i+=1)
 	{
-	itemid=global.phone[i]
-
-
-
-
-	switch(itemid)
+		itemid=global.phone[i]
+		switch(itemid)
 	{
 	//phone numbers
 	case 201: 
@@ -30,12 +26,5 @@ function scr_phonename() {
 	        global.phonename[i]="Flirt"
 	        break;
 	}
-
-
-
-
 	}
-
-
-
 }

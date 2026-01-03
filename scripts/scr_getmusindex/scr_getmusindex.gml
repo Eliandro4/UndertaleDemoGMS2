@@ -51,7 +51,4 @@ function scr_getmusindex(argument0) {
 	    song = mus_toriel;
 
 	return song
-
-
-
 }

@@ -26,7 +26,6 @@ function __background_set_element(argument0, argument1, argument2, argument3, ar
 	__result[0] = -1;
 	__result[1] = -1;
 
-
 	// Now look at the existing layers in the room to see if we have any foregrounds or backgrounds
 	var __fgstring = "Compatibility_Foreground_";
 	var __bgstring = "Compatibility_Background_";
@@ -44,7 +43,6 @@ function __background_set_element(argument0, argument1, argument2, argument3, ar
 		__slots[__i] = -1;
 		__isforeground[__i] = false;
 	}
-
 
 	for(__i = 0; __i < __layerlistlength; __i++)
 	{
@@ -125,7 +123,6 @@ function __background_set_element(argument0, argument1, argument2, argument3, ar
 		layer_depth(__collayer, __farthestdepth);
 	}
 
-
 	// Construct our layer name and depth
 	var __layername;
 	var __layerdepth;
@@ -187,6 +184,4 @@ function __background_set_element(argument0, argument1, argument2, argument3, ar
 	__result[1] = __layerid;
 
 	return __result;
-
-
 }

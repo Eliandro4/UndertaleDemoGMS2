@@ -13,6 +13,4 @@ function action_if_variable(argument0, argument1, argument2) {
 		default:ret = (argument0 == argument1); break;	
 	}
 	return ret;
-
-
 }

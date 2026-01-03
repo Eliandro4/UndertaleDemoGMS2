@@ -7,11 +7,7 @@ function scr_storageshift(argument0, argument1, argument2) {
 	  {
 	  global.flag[i+argument2]=global.flag[i+argument2+1]
 	  }
-  
 	//TODO: Actually checks if i need to put arguments here
 	scr_itemnameb(argument0)
 	scr_storagename(argument1)
-
-
-
 }

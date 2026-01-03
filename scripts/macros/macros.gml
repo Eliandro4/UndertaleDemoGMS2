@@ -1,6 +1,3 @@
 function macros() {
-#macro monsterpopulation1 18
-
-
-
+	#macro monsterpopulation1 18
 }
