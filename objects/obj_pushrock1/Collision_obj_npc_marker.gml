@@ -1,8 +1,7 @@
-if push=0
- {
- push=1
- x=xstart+100
- obj_mainchara.x-=3
- global.flag[31]=1
- }
-
+if (push == 0)
+{
+    push = 1;
+    x = 280;
+    obj_mainchara.x -= 6;
+    global.flag[31] = 1;
+}
