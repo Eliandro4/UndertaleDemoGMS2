@@ -11,7 +11,7 @@ function SCR_THATCH(argument0, argument1, argument2, argument3, argument4, argum
 	bulletnumber = argument9
 	global.bulletappearance = argument10
 
-	for (i=0; i<=bulletnumber;i+=1)
+	for (i=0; i<=bulletnumber; i+=1)
 	{
 		global.bulletvariable[6] += argument2
 		global.bulletvariable[7] += (argument8*i)

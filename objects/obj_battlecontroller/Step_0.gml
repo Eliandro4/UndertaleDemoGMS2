@@ -125,7 +125,7 @@ if ((global.mnfight == 0) and (global.myfight == 0))
          obj_heart.x = -200
          keyboard_clear(vk_enter)
       }
-      if (global.bmenuno == - 2) then
+      if (global.bmenuno == 2) then
       {
          global.mytarget = global.bmenucoord[1]
          with( OBJ_WRITER )
@@ -158,9 +158,8 @@ if ((global.mnfight == 0) and (global.myfight == 0))
          with ( OBJ_WRITER )
 			halt = 3
          global.mercyuse=global.bmenucoord[4]
-         if (global.mercyuse==1) then
-         {scr_runaway(); global.talked=90}
-         if (runaway==0) then sound_play(snd_select)
+         if (global.mercyuse==1) {scr_runaway(); global.talked=90}
+         if (runaway == 0) then sound_play(snd_select)
          global.myfight = 4 //item usage (i suppose?)
          obj_heart.x = -200
          keyboard_clear(vk_enter)

@@ -4,19 +4,19 @@ function scr_phoneget(argument0) {
 	loop=1
 	global.phone[8]=999
 	while (loop == 1)
-	   {
-	     if global.phone[i]=0 then
-	        {
-	        global.phone[i]=argument0
+	{
+	    if global.phone[i]=0 then
+	    {
+	    	global.phone[i]=argument0
 	        break
-	        }
-	     if i=8 then
-	        {
-	        scr_itemnospace()
+	    }
+	    if i=8 then
+	    {
+	    	scr_itemnospace()
 	        break;
-	        }
-	        i+=1
-	   }
+	    }
+	    i+=1
+	}
 	//TODO: Actually checks if i need to put arguments here
 	scr_phonename(argument0)
 }

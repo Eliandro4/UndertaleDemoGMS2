@@ -8,8 +8,8 @@ function scr_namingscreen() {
 	draw_set_color(c_white)
 	draw_set_font(fnt_maintext)
 
-	if naming=4 then
-	   {
+	if (naming == 4)
+	{
 	   global.charname=charname
 	   instance_create(0,0,obj_whitefader)
 	   caster_free(menusong1)
@@ -20,49 +20,49 @@ function scr_namingscreen() {
 	   naming=5
 	   cy=caster_load("music/cymbal.ogg")
 	   caster_play(cy,0.8,0.95)
-	   }
+	}
    
-	if naming=5 then
+	if (naming == 5)
 	{
-	alerm+=1
-	if q<120 then q+=1
-	draw_text_transformed(140+random(r*2)-q/3,q/2+55+random(r*2),string_hash_to_newline(charname),1+q/50,1+q/50,random_ranger(-r*q/60,r*q/60))
-	if alerm>179 then
-	   {
-	   instance_create(0,0,obj_persistentfader)
-	   caster_free(cy)
-	   room_goto_next()
-	   }
+		alerm+=1
+		if q<120 then q+=1
+		draw_text_transformed(140+random(r*2)-q/3,q/2+55+random(r*2),string_hash_to_newline(charname),1+q/50,1+q/50,random_ranger(-r*q/60,r*q/60))
+		if alerm>179 then
+	   	{
+	   		instance_create(0,0,obj_persistentfader)
+	   		caster_free(cy)
+	   		room_goto_next()
+	   	}
 	}
 
-	if naming=2
-	  {
-	  if keyboard_multicheck_pressed(0)=1
-	   {
-	   if selected2=1 and string_length(charname)>0 then naming=4
-	   if selected2=0 then naming=1
-	   keyboard_clear(vk_enter)
-	   }
-	   if naming=2
-	   {
-	   draw_set_color(c_white)
-	   if q<120 then q+=1
-	  draw_text_transformed(140+random(r*2)-q/3,q/2+55+random(r*2),string_hash_to_newline(charname),1+q/50,1+q/50,random_ranger(-r*q/60,r*q/60))
-	  draw_text(90,30,string_hash_to_newline("Is this name correct?"))
-	  draw_set_color(c_white)
-	  if selected2=0 then draw_set_color(c_yellow) //Quit
-	  draw_text(70,200,string_hash_to_newline("No"))
-	  draw_set_color(c_white)
-	  if selected2=1 then draw_set_color(c_yellow) //Done
-	  draw_text(210,200,string_hash_to_newline("Yes"))
+	if (naming == 2)
+	{
+		if (keyboard_multicheck_pressed(0) == 1)
+		{
+	   		if ((selected2 == 1) && (string_length(charname)>0)) {naming=4}
+	   		if (selected2 == 0) {naming=1}
+	   		keyboard_clear(vk_enter)
+	   	}
+	   	if (naming == 2)
+	   	{
+	   		draw_set_color(c_white)
+	   		if (q < 120) {q+=1}
+	  		draw_text_transformed(140+random(r*2)-q/3,q/2+55+random(r*2),string_hash_to_newline(charname),1+q/50,1+q/50,random_ranger(-r*q/60,r*q/60))
+	  		draw_text(90,30,string_hash_to_newline("Is this name correct?"))
+	  		draw_set_color(c_white)
+	  		if (selected2 == 0) {draw_set_color(c_yellow)} //Quit
+	  		draw_text(70,200,string_hash_to_newline("No"))
+	  		draw_set_color(c_white)
+	  		if (selected2 == 1) {draw_set_color(c_yellow)} //Done
+	  		draw_text(210,200,string_hash_to_newline("Yes"))
   
-	    if keyboard_check_pressed(vk_right) or keyboard_check_pressed(vk_left)
-	     {
-	     if selected2=1 then selected2=0
-	     else selected2=1
-	     }
-	     }
-	  }
+	    	if (keyboard_check_pressed(vk_right) or keyboard_check_pressed(vk_left))
+	     	{
+	     		if (selected2 == 1) {selected2=0}
+	     		else {selected2=1}
+	     	}
+	    }
+	}
 
 	if naming=1 then
 	{

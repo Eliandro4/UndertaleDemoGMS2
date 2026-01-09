@@ -36,7 +36,7 @@ function SCR_TEXT(argument0) {
 	     break;
 	case 7:
 	     global.msg[0]="   * Spare"
-	     if global.mercy=0 then global.msg[0]+="&   * Flee"
+	     if (global.mercy == 0) { global.msg[0]+="&   * Flee" }
 	     break;
 	case 9: //itemnames for first menu
 	     global.msg[0] = "   * " + global.itemnameb[0] + "     "
@@ -639,33 +639,33 @@ function SCR_TEXT(argument0) {
 	case 530:
 	    global.plot=19.3
 	    global.msg[0]="* Here is an exciting&  snail fact./"
-	    if global.choice=1 then global.msg[0]="\\E1* Um^1.^1.^1.&*\\E0 How about an exciting&  snail fact?/"
+	    if (global.choice == 1) {global.msg[0]="\\E1* Um^1.^1.^1.&*\\E0 How about an exciting&  snail fact?/"}
 	    global.msg[1]="\\E2* Did you know&  that snails.../"
 	    r=round(random(3))
-	    if r = 0 then global.msg[2]="\\E0* Have a chainsaw-like&  tongue called a&  radula?/"
-	    if r = 1 then global.msg[2]="\\E0* Sometimes flip their&  digestive systems&  as they mature?/"
-	    if r = 2 then global.msg[2]="\\E0* Make terrible&  shoelaces?/"
-	    if r = 3 then global.msg[2]="\\E0* Talk^2. Really^2. Slowly^2?&* Just kidding^1, snails&  don't talk./"
+	    if (r == 0) {global.msg[2]="\\E0* Have a chainsaw-like&  tongue called a&  radula?/"}
+	    if (r == 1) {global.msg[2]="\\E0* Sometimes flip their&  digestive systems&  as they mature?/"}
+	    if (r == 2) {global.msg[2]="\\E0* Make terrible&  shoelaces?/"}
+	    if (r == 3) {global.msg[2]="\\E0* Talk^2. Really^2. Slowly^2?&* Just kidding^1, snails&  don't talk./"}
 	    global.msg[3]="\\E0* Interesting.&              How to exit&  Yeah        the RUINS\\C /"
 	    global.msg[4]=" "
 	break;
 
 	case 531:
 	    global.plot=19.4
-	    if global.choice=0 then global.msg[0]="* Well^1, bother me&  if you need anything&  else./%%"
+	    if (global.choice == 0) { global.msg[0]="* Well^1, bother me&  if you need anything&  else./%%" }
 	    else
-	    { 
-	      if global.choice=1 then { global.msg[0]="\\E1* ... I have to do&  something^1.&* Stay here./%%" ; global.plot=19.9 }
-	      if global.choice=-1 then 
-	         {
-	         global.msg[0]="\\E0* What is it?&              How to exit&  Nothing     the RUINS\\C /"
-	         }
+	    {
+	      if (global.choice == 1) { global.msg[0]="\\E1* ... I have to do&  something^1.&* Stay here./%%" ; global.plot=19.9 }
+	      if (global.choice == -1) 
+	      {
+	      	global.msg[0]="\\E0* What is it?&              How to exit&  Nothing     the RUINS\\C /"
 	      }
+	    }
 	    break;
     
 	case 532:
-	    if global.choice=0 then global.msg[0]="* If you need anything^1,&  just ask./%%"
-	    if global.choice=1 then{  global.msg[0]="\\E1* ... I have to do&  something.&* Stay here./%%."; global.plot=19.9; }
+	    if (global.choice == 0) { global.msg[0]="* If you need anything^1,&  just ask./%%" }
+	    if (global.choice == 1) { global.msg[0]="\\E1* ... I have to do&  something.&* Stay here./%%."; global.plot=19.9; }
 	break;
     
 	case 666: //flowey
@@ -848,56 +848,56 @@ function SCR_TEXT(argument0) {
         
 	// phone dialogue
 	case 1501:
-	     global.msg[0]="* Dialing..\\E0.\\TT /"
-	     if doak=0 then
-	        {
+	      global.msg[0]="* Dialing..\\E0.\\TT /"
+	      if (doak == 0)
+	      {
 	        doak=1
-	        global.flag[40]+=1
-	        }
-	     if global.flag[40]=1 then
-	       {
-	       global.msg[1]="\\F1 %"
-	       global.msg[2]="\\E0* This is TORIEL./"
-	       global.msg[3]="* You only wanted to&  say hello...^2?&* Well then./"
-	       global.msg[4]="\\E0* 'Hello!'/"
-	       global.msg[5]="* I hope that suffices^1.&* Hee hee./"
-	       global.msg[6]="\\TS \\F0 \\T0 %"
-	       global.msg[7]="* Click.../%%"
-	       }
-	     if global.flag[40]=2 then
-	       {
-	       global.msg[1]="\\F1 %"
-	       global.msg[2]="\\E0* This is TORIEL./"
-	       global.msg[3]="* You want to say&  hello again?/"
-	       global.msg[4]="* 'Salutations!'/"
-	       global.msg[5]="* Is that enough?/"
-	       global.msg[6]="\\TS \\F0 \\T0 %"
-	       global.msg[7]="* Click.../%%"
-	       }
-	     if global.flag[40]=3 then
-	       {
-	       global.msg[1]="\\F1 \\TT %"
-	       global.msg[2]="\\E0* This is TORIEL./"
-	       global.msg[3]="* Are you bored^1?&* I should have given& a book to you./"
-	       global.msg[4]="* My apologies./"
-	       global.msg[5]="* Why not use your&  imagination to&  divert yourself?/"
-	       global.msg[6]="* Pretend you are..^1.&* A monarch!/"
-	       global.msg[7]="* Rule over the leaf pile&  with a fist of iron./"
-	       global.msg[8]="* Can you do that for me?/"
-	       global.msg[9]="\\TS \\F0 \\T0 %"
-	       global.msg[10]="* Click.../%%"
-	       }
-	      if global.flag[40]>3 then
-	       {
-	       global.msg[1]="\\F1 \\TT %"
-	       global.msg[2]="\\E0* This is TORIEL./"
-	       global.msg[3]="* Hello^1, my child./"
-	       global.msg[4]="\\E1* Sorry^1, I do not have&  much to say./"
-	       global.msg[5]="\\E0* It was nice to hear&  your voice^1, though^1./"
-	       global.msg[6]="\\TS \\F0 \\T0 %"
-	       global.msg[7]="* Click.../%%"
-	       }
-	       break; 
+	    	global.flag[40]+=1
+	      }
+	      if (global.flag[40] == 1)
+	      {
+	       	global.msg[1]="\\F1 %"
+	       	global.msg[2]="\\E0* This is TORIEL./"
+	       	global.msg[3]="* You only wanted to&  say hello...^2?&* Well then./"
+	       	global.msg[4]="\\E0* 'Hello!'/"
+	       	global.msg[5]="* I hope that suffices^1.&* Hee hee./"
+	       	global.msg[6]="\\TS \\F0 \\T0 %"
+	       	global.msg[7]="* Click.../%%"
+	      }
+	      if (global.flag[40] == 2)
+	      {
+	       	global.msg[1]="\\F1 %"
+	       	global.msg[2]="\\E0* This is TORIEL./"
+	       	global.msg[3]="* You want to say&  hello again?/"
+	       	global.msg[4]="* 'Salutations!'/"
+	       	global.msg[5]="* Is that enough?/"
+	       	global.msg[6]="\\TS \\F0 \\T0 %"
+	       	global.msg[7]="* Click.../%%"
+	      }
+	      if (global.flag[40] == 3)
+	      {
+	       	global.msg[1]="\\F1 \\TT %"
+	       	global.msg[2]="\\E0* This is TORIEL./"
+	       	global.msg[3]="* Are you bored^1?&* I should have given& a book to you./"
+	       	global.msg[4]="* My apologies./"
+	       	global.msg[5]="* Why not use your&  imagination to&  divert yourself?/"
+	       	global.msg[6]="* Pretend you are..^1.&* A monarch!/"
+	       	global.msg[7]="* Rule over the leaf pile&  with a fist of iron./"
+	       	global.msg[8]="* Can you do that for me?/"
+	       	global.msg[9]="\\TS \\F0 \\T0 %"
+	       	global.msg[10]="* Click.../%%"
+	      }
+	      if (global.flag[40] > 3)
+	      {
+	       	global.msg[1]="\\F1 \\TT %"
+	       	global.msg[2]="\\E0* This is TORIEL./"
+	       	global.msg[3]="* Hello^1, my child./"
+	       	global.msg[4]="\\E1* Sorry^1, I do not have&  much to say./"
+	       	global.msg[5]="\\E0* It was nice to hear&  your voice^1, though^1./"
+	       	global.msg[6]="\\TS \\F0 \\T0 %"
+	    	global.msg[7]="* Click.../%%"
+	      }
+	      break; 
 	case 1502:
 	     global.msg[0]="* Dialing..\\E0.\\TT /"
 	     global.msg[1]="\\F1 %"
@@ -932,37 +932,37 @@ function SCR_TEXT(argument0) {
 	     global.msg[9]="* Click.../%%"
 	     break;
 	case 1505: // flirt
-	     if doak=0 then
-	        {
+	     if (doak == 0)
+	     {
 	        doak=1
 	        global.flag[41]+=1
-	        }
-	     if global.flag[41]=1 then
-	     {
-	     global.msg[0]="* Dialing..\\E0.\\TT /"
-	     global.msg[1]="\\F1 %"
-	     global.msg[2]="\\E8* ...^2 huh???/"
-	     global.msg[3]="\\E1* Oh,^1 heh..^1 heh...^1 \\E0 &* Ha ha ha!/"
-	     global.msg[4]="* How adorable...^1 I&  could pinch your cheek!/"
-	     global.msg[5]="* You can certainly find&  better than an old woman&  like me./"
-	     global.msg[6]="\\TS \\F0 \\T0 %"
-	     global.msg[7]="* Click.../%%"
 	     }
-	     if global.flag[41]=2 then
+	     if (global.flag[41] == 1)
 	     {
-	     global.msg[0]="* Dialing..\\E0.\\TT /"
-	     global.msg[1]="\\F1 %"
-	     global.msg[2]="\\E1* Oh dear,^1 are you&  serious...?/"
-	     global.msg[3]="\\E1* I do not know if this is&  pathetic,^1 or endearing./"
-	     global.msg[4]="\\TS \\F0 \\T0 %"
-	     global.msg[5]="* Click.../%%"
-	         if global.flag[42]=1 then
-	                {
-	                global.msg[3]="\\E8* And after you said you&  want to call&  me \"mother...\"/"
-	                global.msg[4]="\\E0* You are an...^2 &  \\E1... \"interesting\"&  child./"
-	                global.msg[5]="\\TS \\F0 \\T0 %"
-	                global.msg[6]="* Click.../%%"
-	                }
+	     	global.msg[0]="* Dialing..\\E0.\\TT /"
+	     	global.msg[1]="\\F1 %"
+	     	global.msg[2]="\\E8* ...^2 huh???/"
+	     	global.msg[3]="\\E1* Oh,^1 heh..^1 heh...^1 \\E0 &* Ha ha ha!/"
+	     	global.msg[4]="* How adorable...^1 I&  could pinch your cheek!/"
+	     	global.msg[5]="* You can certainly find&  better than an old woman&  like me./"
+	     	global.msg[6]="\\TS \\F0 \\T0 %"
+	     	global.msg[7]="* Click.../%%"
+	     }
+	     if (global.flag[41] == 2)
+	     {
+	     	global.msg[0]="* Dialing..\\E0.\\TT /"
+	     	global.msg[1]="\\F1 %"
+	     	global.msg[2]="\\E1* Oh dear,^1 are you&  serious...?/"
+	     	global.msg[3]="\\E1* I do not know if this is&  pathetic,^1 or endearing./"
+	     	global.msg[4]="\\TS \\F0 \\T0 %"
+	     	global.msg[5]="* Click.../%%"
+	        if (global.flag[42] == 1)
+	        {
+	            global.msg[3]="\\E8* And after you said you&  want to call&  me \"mother...\"/"
+	            global.msg[4]="\\E0* You are an...^2 &  \\E1... \"interesting\"&  child./"
+	            global.msg[5]="\\TS \\F0 \\T0 %"
+	            global.msg[6]="* Click.../%%"
+	        }
 	     }
 	     break;
 	case 1506: // nobody's home
