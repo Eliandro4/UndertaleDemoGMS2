@@ -27,10 +27,11 @@ global.currentroom = room;
 if ((global.interact == 3) && (global.entrance > 0))
 {
 	global.interact = 0;
-	for ( var i = 0; i < 11; ++i ) 
+	for ( var i = 0; i < 26; ++i ) 
 	{
 		if ( global.entrance == i )
 		{
+			show_debug_message("entrance: " + string(global.entrance))
 			var room_string = string(string_replace(room_get_name(global.currentroom), "room_", ""))
 			ini_open(working_directory + "data\\maps\\" + "door_marker_" + room_string + ".ini")
 				x = ini_read_real("Marker" + string(i), "xpos", 0)
@@ -38,6 +39,7 @@ if ((global.interact == 3) && (global.entrance > 0))
 			ini_close()
 
 			show_debug_message("Loading Door Marker: " + string(global.entrance) + " for room: " + room_get_name(global.currentroom) + " INI file: " + "door_marker_" + room_string + ".ini")
+			break
 		}
 	}
 }
